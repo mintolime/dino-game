@@ -12,10 +12,10 @@ import {
   noneBtn,
   playAgainBtn,
   gameScore,
-  gameScoreFinal
+  gameScoreFinal,
 } from './utils/constants.js'
 let score = 0;
-console.log(pageGame)
+
 const fix = (evt) => {
   console.log(evt.target);
 };
@@ -38,6 +38,8 @@ function rechangedPage(open, close) {
 //проверка кнопок при входе
 const checkBtnStart = (evt) => {
   if (evt.target === yesBtn) {
+    console.log(yesBtn)
+    fix(evt)
     rechangedPage(pageGame, pageStart);
   } else if (evt.target === noneBtn) {
     rechangedPage(pageEnd, pageStart);

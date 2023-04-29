@@ -13,3 +13,19 @@ const playAgainBtn = pageGameOver.querySelector('.game__btn-return');
 const gameScore = document.querySelector('.game__score span');
 const gameScoreFinal = document.querySelector('.game__score_final span');
 
+export {
+  pageGame,
+  pageStart,
+  pageEnd ,
+  pageGameOver,
+  dino ,
+  cactus,
+  exitBtn ,
+  backBtn ,
+  jumpBtn,
+  yesBtn,
+  noneBtn,
+  playAgainBtn,
+  gameScore,
+  gameScoreFinal
+};
